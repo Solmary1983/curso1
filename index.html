@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tetris - Curso1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Tetris</h1>
+    <div class="info">
+      <div>Puntuación: <span id="score">0</span></div>
+      <div>Nivel: <span id="level">0</span></div>
+      <div>Filas: <span id="lines">0</span></div>
+    </div>
+  </header>
+
+  <main>
+    <canvas id="game" width="240" height="480"></canvas>
+    <aside>
+      <div class="controls">
+        <button id="start">Iniciar / Reiniciar</button>
+        <button id="pause">Pausa</button>
+      </div>
+      <h3>Siguiente</h3>
+      <canvas id="next" width="80" height="80"></canvas>
+      <p class="hint">Controles: ← → mover, ↑ rotar, ↓ bajar, espacio caída rápida</p>
+    </aside>
+  </main>
+
+  <footer>
+    <small>Hecho con JavaScript — Abre index.html en el navegador para jugar.</small>
+  </footer>
+
+  <script src="tetris.js"></script>
+</body>
+</html>
